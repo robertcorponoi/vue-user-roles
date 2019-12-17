@@ -1,6 +1,6 @@
 {
   "name": "vue-user-roles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple way to add and check for user permissions in your Vue app.",
   "main": "index.js",
   "directories": {

@@ -28,8 +28,8 @@ A simple way to add and check for user permissions in your Vue app.
 - [Initialization](#initialization)
 - [Creating Roles](#creating-roles)
 - [Setting The User's Role](#setting-the-users-role)
-- [Checking Permissions](#checking-permissions);
-- [Tests]
+- [Checking Permissions](#checking-permissions)
+- [Tests](#tests)
 
 ## **Installation**
 
@@ -108,7 +108,7 @@ const admin = {
 
 Now the admin can do anything and everything.
 
-## **Setting the Users Role**
+## **Setting the User's Role**
 
 Before you can check for permissions you have to set this users role. This property is a part of the Vue prototype so you can set it at any point in your application.
 
