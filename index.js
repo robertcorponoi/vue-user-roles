@@ -1,7 +1,6 @@
 'use strict'
 
 export default {
-
   /**
    * A collection of the roles created.
    * 
@@ -46,9 +45,7 @@ export default {
    * VueUserRoles.add('admin', adminRole);
    */
   add(name, permissions) {
-
     this.roles[name] = permissions;
-
   },
 
   /**
@@ -63,18 +60,14 @@ export default {
    * @returns {boolean} Returns true if the user has permission to perform the action or false otherwise.
    */
   _checkTypePermissions(userPermissions, type, action) {
-
     if (Array.isArray(userPermissions[type])) return userPermissions[type].includes(action);
-
     else if (userPermissions[type] === '*') return true;
-
   },
 
   /**
    * @param {Vue} vue A reference to the local Vue object.
    */
   install(Vue) {
-
     /**
      * The role of the user using the application.
      * 
@@ -103,25 +96,17 @@ export default {
      * }
      */
     Vue.prototype.$can = (action, type) => {
-
       const userPermissions = this.roles[Vue.prototype.$userRole];
 
       const isAnyType = Object.keys(userPermissions)[0] === '*';
 
       if (isAnyType) {
-        
         return this._checkTypePermissions(userPermissions, '*', action);
-
       } else {
-
         if (!userPermissions[type]) return false;
 
         return this._checkTypePermissions(userPermissions, type, action);
-
       }
-
     }
-
   }
-
 };
