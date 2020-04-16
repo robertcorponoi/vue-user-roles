@@ -1,6 +1,6 @@
 {
   "name": "vue-user-roles",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A simple way to add and check for user permissions in your Vue app.",
   "main": "index.js",
   "directories": {
@@ -22,10 +22,10 @@
   "author": "Robert Corponoi",
   "license": "MIT",
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.1.2",
-    "@vue/cli-plugin-unit-jest": "^4.1.2",
-    "@vue/cli-service": "^4.1.2",
-    "@vue/test-utils": "^1.0.0-beta.31",
+    "@vue/cli-plugin-babel": "^4.3.1",
+    "@vue/cli-plugin-unit-jest": "^4.3.1",
+    "@vue/cli-service": "^4.3.1",
+    "@vue/test-utils": "^1.0.0-beta.33",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.10"
   },
